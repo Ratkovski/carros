@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank
 @Introspected
 data class Carro(
     @field:NotBlank val modelo:String?,
-    @field:NotBlank val placa:String?
+    @field:NotBlank @field:Placa val placa:String?
 
 
 )
